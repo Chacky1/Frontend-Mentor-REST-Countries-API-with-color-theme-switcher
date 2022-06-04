@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+$dark-mode-background: hsl(207, 26%, 17%);
+$dark-mode-element: hsl(209, 23%, 22%);
+$dark-mode-text: hsl(0, 0%, 100%);
+$light-mode-background: hsl(0, 0%, 98%);
+$light-mode-element: hsl(0, 0%, 100%);
+$light-mode-text: hsl(200, 15%, 8%);
+$light-mode-input: hsl(0, 0%, 52%);
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 14px;
+    font-weight: 600;
+    background-color: $dark-mode-background;
+}
+
+.white-content {
+    background-color: $light-mode-background;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}

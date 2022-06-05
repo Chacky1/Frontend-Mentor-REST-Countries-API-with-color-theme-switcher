@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <>
+    <div className="header-content">
       <h1>Where in the world ?</h1>
       <button type="button" onClick={handleClickTheme}>
         {theme === themes.light && (
@@ -33,6 +33,6 @@ export default function Header() {
         </p>
         )}
       </button>
-    </>
+    </div>
   );
 }

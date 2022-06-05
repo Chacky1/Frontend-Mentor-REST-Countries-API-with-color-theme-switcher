@@ -1,1 +1,12 @@
+@import url('sanitize.css');
 @import 'settings';
+@import './pages/home';
+@import './pages/countryDetails';
+@import './components/header';
+@import './components/home/countryCard';
+@import './components/home/countryGrid';
+@import './components/home/searchBar';
+@import './components/home/selectFilter';
+@import './components/countryDetails/countryInfos';
+@import './components/common/backButton';
+@import './components/common/tag';

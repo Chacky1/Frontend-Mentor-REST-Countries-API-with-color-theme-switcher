@@ -13,13 +13,30 @@ body {
     font-family: 14px;
     font-weight: 600;
     background-color: $dark-mode-background;
+    color: $dark-mode-text;
 }
 
 .white-content {
     background-color: $light-mode-background;
 }
 
+.header {
+    background-color: $dark-mode-element;
+}
+
 .error {
     color: red;
     text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
 }

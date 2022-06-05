@@ -62,7 +62,7 @@ export default function Home() {
           languages: country.languages ? Object.keys(country.languages).map((language) => country.languages[language]) : [],
           borderCountries: country.borders ? country.borders : [], // references cca3
           cca3: country.cca3,
-          flag: country.flags.png,
+          flag: country.flags.svg,
         }));
         changeCountries(newCountries);
       } catch (axiosError: any) {
@@ -75,10 +75,13 @@ export default function Home() {
   }, [countryOptions]);
 
   return (
-    <div>
-      <SearchBar countryOptionsDispatch={countryOptionsDispatch} />
-      <SelectFilter countryOptionsDispatch={countryOptionsDispatch} />
+    <section className="home">
+      <div className="home__header">
+        <SearchBar countryOptionsDispatch={countryOptionsDispatch} />
+        <SelectFilter countryOptionsDispatch={countryOptionsDispatch} />
+      </div>
+
       <CountryGrid countryOptions={countryOptions} error={error} />
-    </div>
+    </section>
   );
 }

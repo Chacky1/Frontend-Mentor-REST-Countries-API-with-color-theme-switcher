@@ -18,17 +18,17 @@ export default function CountryCard({ country }: ICountryCardProps) {
         <h3>{country.name}</h3>
         <ul>
           <li>
-            <span>Population:</span>
+            <span>Population: </span>
             {country.population}
           </li>
           <li>
-            <span>Region:</span>
+            <span>Region: </span>
             {country.region}
           </li>
           {country.capitals
             && (
             <li>
-              <span>Capital:</span>
+              <span>Capital: </span>
               {parseCountryManyDataForATypeOfInfo(country.capitals)}
             </li>
             )}

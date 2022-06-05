@@ -12,8 +12,10 @@ export default function SearchBar({ countryOptionsDispatch }: ISearchBarProps) {
 
   return (
     <div className="search-bar">
-      <BsSearch />
-      <input type="text" placeholder="Search for a country..." onChange={(event) => handleSearchCountryChange(event)} />
+      <div className="search-bar__icon">
+        <BsSearch />
+      </div>
+      <input className="search-bar__input" type="text" placeholder="Search for a country..." onChange={(event) => handleSearchCountryChange(event)} />
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.home {
+    width: 80%;
+    margin: auto;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+    }
+}

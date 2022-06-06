@@ -20,11 +20,17 @@ export default function CountryDetails() {
 
   return (
     <section className="country">
-      <BackButton text="back" />
-      <div className="country__flag">
-        <img src={currentCountry.flag} alt={currentCountry.name} />
+      <div className="country__back">
+        <BackButton text="back" />
       </div>
-      <CountryInfos country={currentCountry} />
+      <div className="country__content">
+        <div className="country__flag">
+          <img src={currentCountry.flag} alt={currentCountry.name} />
+        </div>
+        <div className="country__infos">
+          <CountryInfos country={currentCountry} />
+        </div>
+      </div>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { Country } from '../../interfaces/country.interface';
-import { parseCountryManyDataForATypeOfInfo } from '../../utils/parsers';
+import { parseCountryManyDataForATypeOfInfo, parsePopulation } from '../../utils/parsers';
 
 export interface ICountryCardProps {
     country: Country;
@@ -18,18 +18,27 @@ export default function CountryCard({ country }: ICountryCardProps) {
         <h3>{country.name}</h3>
         <ul>
           <li>
-            <span>Population: </span>
-            {country.population}
+            Population:
+            <span>
+              {' '}
+              {parsePopulation(country.population)}
+            </span>
           </li>
           <li>
-            <span>Region: </span>
-            {country.region}
+            Region:
+            <span>
+              {' '}
+              {country.region}
+            </span>
           </li>
           {country.capitals
             && (
             <li>
-              <span>Capital: </span>
-              {parseCountryManyDataForATypeOfInfo(country.capitals)}
+              Capital:
+              <span>
+                {' '}
+                {parseCountryManyDataForATypeOfInfo(country.capitals)}
+              </span>
             </li>
             )}
         </ul>

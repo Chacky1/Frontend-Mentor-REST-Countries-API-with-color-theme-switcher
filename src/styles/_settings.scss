@@ -18,6 +18,43 @@ body {
 
 .white-content {
     background-color: $light-mode-background;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    select {
+        color: $light-mode-text;
+    }
+
+    header,
+    select,
+    .country-card,
+    .search-bar__input {
+        box-shadow: 0px 0px 3px 2px #D8D8D8;
+    }
+
+    header,
+    .country-card {
+        background-color: $light-mode-element;
+    }
+
+    select {
+        background-color: $light-mode-background;
+    }
+
+    .search-bar__icon {
+        color: $light-mode-input;
+    }
+
+    .search-bar__input {
+        background-color: white;
+        color: $light-mode-input;
+    }
 }
 
 .header {
@@ -39,4 +76,8 @@ li {
     margin: 0;
     padding: 0;
     font-size: 0.8rem;
+
+    span {
+        font-weight: 300;
+    }
 }

@@ -11,3 +11,17 @@ export const parseBorderCountries = (borderCountries: string[], countries: Count
 
   return '';
 });
+
+export const parsePopulation = (population: number): string => {
+  const eachDigitOfPopulation = `${population}`.split('');
+  const numberOfDigitsInPopulation = eachDigitOfPopulation.length;
+  let result = '';
+  for (let i = 0; i < numberOfDigitsInPopulation; i += 1) {
+    if (i !== 0 && i % 3 === 0) {
+      result += `,${eachDigitOfPopulation[i]}`;
+    } else {
+      result += eachDigitOfPopulation[i];
+    }
+  }
+  return result;
+};
